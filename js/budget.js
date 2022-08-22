@@ -17,7 +17,7 @@ document.getElementById('calculate-btn').addEventListener('click', function(){
     const perPlayerAmount=amountFieldValue('per-player-amonut');
 
     if(isNaN(perPlayerAmount)){
-        alert("Input Field Can't Be Empty. \nPlease Enter a Valid Number.");
+        alert("Please Enter a Valid Number. \nInput Field Can't Be Empty.");
         return;
     }
     

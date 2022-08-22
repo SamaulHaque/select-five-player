@@ -12,7 +12,7 @@ function list(playerID){
     listLi = list.getElementsByTagName("li"),
     listLength = listLi.length;
     if(listLength==5){
-      alert("You Can't Select More Than Five Players. \nYou Already Select Five Players");
+      alert("You Can't Select More Than Five Players. \nYou Already Select Five Players.");
       return ;
     } 
     const SelectPlayerName=getPlayerTitle(playerID)
