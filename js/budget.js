@@ -15,16 +15,16 @@ function amountFieldValue(fieldID){
 //calculat event handler
 document.getElementById('calculate-btn').addEventListener('click', function(){
     const perPlayerAmount=amountFieldValue('per-player-amonut');
+
     if(isNaN(perPlayerAmount)){
         alert("Input Field Can't Be Empty. \nPlease Enter a Valid Number.");
         return;
     }
+    
     const playerExpenses=document.getElementById('player-expenses');
-
     let list = document.querySelector("#select-five"),
     listLi = list.getElementsByTagName("li"),
     listLength = listLi.length;
-
     const playerExpensesTotal=perPlayerAmount*listLength;
     playerExpenses.innerText=playerExpensesTotal;
 })

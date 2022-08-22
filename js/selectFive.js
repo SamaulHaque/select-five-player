@@ -66,5 +66,4 @@ document.getElementById('salah-btn').addEventListener('click',function(){
   list('salah');
   document.getElementById("salah-btn").style.backgroundColor='gray';
   document.getElementById("salah-btn").disabled = true;
-
 })
