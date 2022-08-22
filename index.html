@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select World's Best Five</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-gradient-to-l from-slate-500 to-zinc-800 hover:bg-gradient-to-r">
+        <div class="grid grid-cols-1 w-3/4 mx-auto text-center text-white p-8">
+         <div>
+           <h1 class="text-4xl font-bold mb-5 text-yellow-500" >Select World's Best Five Player </h1>
+           <p class="text-xl">We know that there are many good players in the world. But Maximum  five 
+            best players <br> can be selected among them. All the players you are a fan of.
+ 
+          </p>
+         </div>
+        </div>
+    </header>
+<main>
+                    <!--------------------------------------------
+                                Select Players section start here  
+                    ----------------------------------------->
+     <section>
+            <div class="grid grid-cols-4 gap-4 mt-5 w-3/4 mx-auto rounded">
+                <div class="text-center border">
+                    <img class="w-full h-48" src="images/Lionel-Messi.jpg" alt="">
+                    <h2 id="lionel-massi" class=" font-semibold mt-2 text-2xl">Lionel Messi</h2>
+                    <button id="messi-btn" class="my-3 px-10 py-1 bg-blue-400 w-5/6 hover:bg-blue-600 text-white rounded">Seleect</button>
+                </div>
+
+                <div class="text-center border rounded">
+                    <img class="w-full h-48" src="images/Ronaldo.jpg" alt="">
+                    <h2 id="ronaldo" class=" font-semibold mt-2 text-2xl">Cristiano Ronaldo
+                    </h2>
+                    <button id="ronaldo-btn" class="my-3 px-10 py-1 bg-blue-400 w-5/6 hover:bg-blue-600 text-white rounded">Seleect</button>
+                </div>
+
+                <div class=" text-center border rounded">
+                    <img class="w-full h-48" src="images/di maria.jpg" alt="">
+                    <h2 id="di-maria" class=" font-semibold mt-2 text-2xl">Angel Di Maria
+                    </h2>
+                    <button id="di-maria-btn"  class="my-3 px-10 py-1 bg-blue-400 w-5/6 hover:bg-blue-600 text-white rounded">Seleect</button>
+                </div>
+                <!--------------------------------------------
+                        select five players start here  
+                    ----------------------------------------->
+                <div class="border p-3 bg-slate-500	 text-white rounded ">
+                    <h2 class="text-center text-xl font-bold pt-3" >Selected-5 Players</h2>
+                    <ol id="select-five" class="list-decimal pl-5 p-3 ">
+
+                    </ol>
+                </div>
+
+                <div class="h-72 text-center border rounded">
+                    <img class="w-full h-48" src="images/dybala.jpg" alt="">
+                    <h2 id="dybala" class=" font-semibold mt-2 text-2xl">Paulo Dybala</h2>
+                    <button id="dybala-btn" class="my-3 px-10 py-1 bg-blue-400 w-5/6 hover:bg-blue-600 text-white rounded">Seleect</button>
+                </div>
+
+                <div class="h-72 text-center border rounded">
+                    <img class="w-full h-48" src="images/Pique.jpg" alt="">
+                    <h2 id="pique" class=" font-semibold mt-2 text-2xl">Gerard Pique</h2>
+                    <button id="pique-btn" class="my-3 px-10 py-1 bg-blue-400 w-5/6 hover:bg-blue-600 text-white rounded">Seleect</button>
+                </div>
+
+                <div class="h-72 text-center border rounded ">
+                    <img class="w-full h-48" src="images/salah.jpg" alt="">
+                    <h2 id="salah" class=" font-semibold mt-2 text-2xl">Mohamed Salah</h2>
+                    <button id="salah-btn" class="my-3 px-10 py-1 bg-blue-400 w-5/6 hover:bg-blue-600 text-white rounded ">Seleect</button>
+                </div>
+                <!--------------------------------------------
+                                budget start here  
+                    ----------------------------------------->
+                <div class="border bg-slate-500	  p-3 rounded h-90">
+                    <h2 class="text-white text-center mb-2 font-bold text-xl">Budget</h2>
+
+                    <label class="text-white" for="">Per Player</label>
+                    <input id="per-player-amonut" class="w-24 border float-right rounded px-2" type="text">
+                    <button id="calculate-btn" class="my-3 px-10 py-1 bg-blue-400 w-full hover:bg-blue-600 text-white rounded">Calculate</button>
+
+                    <label class="text-white" for="">Player Expenses <span class="float-right">$<span id="player-expenses">00</span> </span></label> <br>
+
+                    <label class="text-white" for="">Manager</label> 
+                    <input id="manager-amonut" class="w-24 my-3 ml-8 border rounded px-2" type="text">
+
+                    <label class="text-white" for="">Coach</label> 
+                    <input id="coach-amount" class="w-24 border float-right rounded px-2" type="text">
+
+                    <button id="calculate-total-btn" class="my-3 py-1 bg-blue-400 w-full hover:bg-blue-600 text-white rounded">Calculate Total</button>
+
+                    <label  class="text-white" for="">Total <span class="float-right">$<span id="total-amount">00</span></span> </label>
+                </div>
+            </div>
+    </section>
+</main>
+                    <!--------------------------------------------
+                                 Footer section start here  
+                    ----------------------------------------->
+<footer class="mt-5 bg-gradient-to-l from-slate-500 to-zinc-800      hover:bg-gradient-to-r text-center text-white py-5">
+    <p>Samaul Haque @ 2022 All Rights Reserved</p>
+</footer>
+                    <!--------------------------------------------
+                                javascript file connection  
+                    ----------------------------------------->
+    <script src="js/selectFive.js"></script>
+    <script src="js/budget.js"></script>
+</body>
+</html>
