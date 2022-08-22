@@ -34,7 +34,7 @@ document.getElementById('calculate-total-btn').addEventListener('click', functio
     const managerAmount=amountFieldValue('manager-amonut');
     const coachAmount=amountFieldValue('coach-amount');
     if(isNaN(managerAmount && coachAmount)){
-        alert("Input Field Can't Be Empty. \nPlease Enter a Valid Number");
+        alert("Please Enter a Valid Number. \nInput Field Can't Be Empty.");
         return;
     }
 
