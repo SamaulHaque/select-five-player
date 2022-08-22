@@ -21,9 +21,11 @@ function list(playerID){
     orderList.innerText=SelectPlayerName;
     listContainer.appendChild(orderList);
 }
+
 /*--------------------------------------------------------------
             Select 5 Player Button Event Handler start here
 ----------------------------------------------------------------*/
+
 // messi button event handler
 document.getElementById('messi-btn').addEventListener('click',function(){
   list('lionel-massi');
