@@ -1,5 +1,5 @@
 /*--------------------------------------------------------------
-                    Fucntion for select 5 player start here
+          Common Fucntion-1 for  select 5 player start here
 ----------------------------------------------------------------*/
 function getPlayerTitle(nameId){
     const getplayerName=document.getElementById(nameId);
@@ -7,7 +7,10 @@ function getPlayerTitle(nameId){
     return playerName;
 }
 
-function list(playerID){
+/*--------------------------------------------------------------
+          Common Fucntion-2 for  select 5 player start here
+----------------------------------------------------------------*/
+function selectedFivelist(playerID){
     let list = document.querySelector("#select-five"),
     listLi = list.getElementsByTagName("li"),
     listLength = listLi.length;
@@ -23,47 +26,22 @@ function list(playerID){
 }
 
 /*--------------------------------------------------------------
-            Select 5 Player Button Event Handler start here
+  Common Fucntion-3 for Select Button Event Handler start here
 ----------------------------------------------------------------*/
+function eventHandler(buttonID){
+  document.getElementById(buttonID).addEventListener('click',function(){
+    selectedFivelist(buttonID);
+    document.getElementById(buttonID).style.backgroundColor='gray';
+    document.getElementById(buttonID).disabled = true;
+  })
+}
 
-// messi button event handler
-document.getElementById('messi-btn').addEventListener('click',function(){
-  list('lionel-massi');
-  document.getElementById("messi-btn").style.backgroundColor='gray';
-  document.getElementById("messi-btn").disabled = true;
-})
-
-// ronaldo button event handler
-document.getElementById('ronaldo-btn').addEventListener('click',function(){
-  list('ronaldo');
-  document.getElementById("ronaldo-btn").style.backgroundColor='gray';
-  document.getElementById("ronaldo-btn").disabled = true;
-})
-
-// di maria button event handler
-document.getElementById('di-maria-btn').addEventListener('click',function(){
-  list('di-maria');
-  document.getElementById("di-maria-btn").style.backgroundColor='gray';
-  document.getElementById("di-maria-btn").disabled = true;
-})
-
-// dybala button event handler
-document.getElementById('dybala-btn').addEventListener('click',function(){
-  list('dybala');
-  document.getElementById("dybala-btn").style.backgroundColor='gray';
-  document.getElementById("dybala-btn").disabled = true;
-})
-
-// pique button event handler
-document.getElementById('pique-btn').addEventListener('click',function(){
-  list('pique');
-  document.getElementById("pique-btn").style.backgroundColor='gray';;
-  document.getElementById("pique-btn").disabled = true;
-})
-
-// salah button event handler
-document.getElementById('salah-btn').addEventListener('click',function(){
-  list('salah');
-  document.getElementById("salah-btn").style.backgroundColor='gray';
-  document.getElementById("salah-btn").disabled = true;
-})
+/*--------------------------------------------------------------
+            Event Handler Function Call
+----------------------------------------------------------------*/
+eventHandler('messi-btn');
+eventHandler('ronaldo-btn');
+eventHandler('di-maria-btn');
+eventHandler('dybala-btn');
+eventHandler('pique-btn');
+eventHandler('salah-btn');
